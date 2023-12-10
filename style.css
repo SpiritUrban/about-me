@@ -645,11 +645,26 @@ body {
   }
 }
 
-.container-2 h2 {
+.container-2 h1 {
+  font-size: 4rem;
   text-align: center;
   color: #2a2a54;
   max-width: 70%;
-  margin: 6rem auto 3rem auto;
+  margin: 6rem auto 1rem auto;
+  line-height: 5rem;
+}
+.container-2 h1 b{
+  font-size: 3rem;
+
+}
+
+
+.container-2 h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #222;
+  max-width: 70%;
+  margin: 4rem auto 3rem auto;
   line-height: 4rem;
 }
 
