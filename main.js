@@ -1,8 +1,6 @@
 const log = console.log;
 
 
-log(location.hash) // : "#de"
-
 switch (location.hash) {
     case '#en':
         switchTo('en')
@@ -18,22 +16,17 @@ switch (location.hash) {
 }
 
 
-
-
 function switchTo(lang) {
+    // 1 - set hash to url
     location.hash = lang
-    log(lang)
+    // 2 - show switched content
     const articleNodeList = document.querySelectorAll('[id*=art-]');
     articleNodeList.forEach(node => node.classList.remove('active'))
-    log(articleNodeList)
     const articleNode = document.querySelector('#art-' + lang);
     articleNode.classList.add('active');
-
-    log(lang)
+    // 3 - switch flag indication
     const swithNodeList = document.querySelectorAll('[id*=swith-]');
     swithNodeList.forEach(node => node.classList.remove('active'))
-    log(swithNodeList)
     const swithNode = document.querySelector('#swith-' + lang);
     swithNode.classList.add('active');
-
 }
