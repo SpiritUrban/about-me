@@ -34,6 +34,11 @@ a:visited {
   text-decoration: none;
 }
 
+.container {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .container .city-lights .light,
 .container .cars-going .car,
 .container .cars-going .reflect,
@@ -583,7 +588,7 @@ body {
   height: 7rem;
 }
 
-.top-switchers .image-container.active img{
+.top-switchers .image-container.active img {
   filter: grayscale(0%);
 }
 
@@ -675,6 +680,7 @@ section.main-box article {
   margin-top: 3rem;
   display: none;
 }
+
 section.main-box article.active {
   margin-top: 3rem;
   display: block;
@@ -715,11 +721,38 @@ li {
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
   .main-box {
     width: 70%;
     /* height: fit-content;
     padding: 3rem;
     margin: 12rem 0; */
+  }
+
+  .top-switchers {
+    /* margin: -9rem auto 0rem auto;
+    display: flex;
+    flex-direction: row; */
+    width: 70%;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main-box {
+    width: 70%;
+    /* height: fit-content;
+    padding: 3rem;
+    margin: 12rem 0; */
+  }
+
+  .top-switchers {
+    /* margin: -9rem auto 0rem auto;
+    display: flex;
+    flex-direction: row; */
+    width: 90%;
+    /* align-items: center; */
+    /* justify-content: space-between; */
   }
 }
