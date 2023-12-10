@@ -583,10 +583,15 @@ body {
   height: 7rem;
 }
 
+.top-switchers .image-container.active img{
+  filter: grayscale(0%);
+}
+
 .top-switchers img {
   width: 7rem;
   filter: grayscale(100%);
   border-radius: 7rem;
+  /* transition: .1s; */
 }
 
 .top-switchers img:hover {
@@ -644,7 +649,7 @@ body {
 }
 
 .glass-effect {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   padding: 20px;
   backdrop-filter: blur(10px);
