@@ -643,6 +643,9 @@ body {
 .container-2 h2 {
   text-align: center;
   color: #2a2a54;
+  max-width: 70%;
+  margin: 6rem auto 3rem auto;
+  line-height: 4rem;
 }
 
 .container-2 h3 {
