@@ -672,13 +672,14 @@ body {
 section.main-box {
   width: 50%;
   height: fit-content;
-  padding: 3rem 3rem 3rem 6rem;
+  padding: 3rem;
   margin: 12rem 0;
 }
 
 section.main-box article {
   margin-top: 3rem;
   display: none;
+  padding-left: 3rem;
 }
 
 section.main-box article.active {
@@ -713,7 +714,6 @@ pre {
 
 ul {
   list-style-type: disc;
-  /* стандартные черные точки */
 }
 
 li {
@@ -722,37 +722,39 @@ li {
 
 
 @media only screen and (max-width: 1300px) {
-  .main-box {
+  section.main-box {
     width: 70%;
-    /* height: fit-content;
-    padding: 3rem;
-    margin: 12rem 0; */
   }
 
   .top-switchers {
-    /* margin: -9rem auto 0rem auto;
-    display: flex;
-    flex-direction: row; */
-    width: 70%;
-    /* align-items: center; */
-    /* justify-content: space-between; */
+    /* width: 60%; */
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .main-box {
+  section.main-box {
     width: 70%;
-    /* height: fit-content;
-    padding: 3rem;
-    margin: 12rem 0; */
   }
 
   .top-switchers {
-    /* margin: -9rem auto 0rem auto;
-    display: flex;
-    flex-direction: row; */
-    width: 90%;
-    /* align-items: center; */
-    /* justify-content: space-between; */
+    width: 80%;
   }
+}
+
+@media only screen and (max-width: 500px) {
+  section.main-box {
+    width: 90%;
+  }
+
+  .container-2 h2 {
+    max-width: 90%;
+  }
+
+  .top-switchers {
+    width: 90%;
+  }
+  section.main-box article {
+    padding-left: 1rem;
+  }
+
 }
