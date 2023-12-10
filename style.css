@@ -642,10 +642,12 @@ body {
 
 .container-2 h2 {
   text-align: center;
+  color: #2a2a54;
 }
 
 .container-2 h3 {
   margin: 2rem 0 0 0;
+  color: #642e1d;
 }
 
 .glass-effect {
@@ -662,7 +664,7 @@ body {
 section.main-box {
   width: 50%;
   height: fit-content;
-  padding: 3rem;
+  padding: 3rem 3rem 3rem 6rem;
   margin: 12rem 0;
 }
 
@@ -706,7 +708,7 @@ ul {
 }
 
 li {
-  margin: 1rem 0 0 0;
+  margin: 2rem 0 0 0;
 }
 
 
