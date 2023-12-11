@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="container no-print">
 		<div class="street-lamps">
 			<div class="street-lamp"></div>
 			<div class="street-lamp"></div>
@@ -49,11 +49,9 @@
 		</div>
 	</div>
 	<!-- ---- -->
-
 	<div class="container-2">
 		<section class="main-box glass-effect animation-from-distance">
-
-			<div class="top-switchers">
+			<div class="top-switchers no-print">
 				<div id="swith-en" onclick="switchTo('en')" class="image-container active">
 					<img src="./src/img/usa-flag-round-circle-icon.svg" alt="English language variant">
 				</div>
@@ -113,6 +111,14 @@
 					</ul>
 				</div>
 
+				<button 
+				onclick="window.print()"
+				class="print no-print">
+					<img src="./src/img/printer.svg" alt="Printer">
+					<b>
+						Print
+					</b>
+				</button>
 			</article>
 
 			<!-- GERMAN -->
@@ -164,6 +170,14 @@
 					</ul>
 				</div>
 
+				<button 
+				onclick="window.print()"
+				class="print no-print">
+					<img src="./src/img/printer.svg" alt="Printer">
+					<b>
+						Drucken
+					</b>
+				</button>
 			</article>
 
 			<!-- RUSSIAN -->
@@ -211,6 +225,15 @@
 							умение работать в условиях ограниченных сроков и ресурсов.</li>
 					</ul>
 				</div>
+
+				<button 
+				onclick="window.print()"
+				class="print no-print">
+					<img src="./src/img/printer.svg" alt="Printer">
+					<b>
+						Распечатать
+					</b>
+				</button>
 			</article>
 
 		</section>

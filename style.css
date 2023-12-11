@@ -653,7 +653,8 @@ body {
   margin: 6rem auto 1rem auto;
   line-height: 4rem;
 }
-.container-2 h1 b{
+
+.container-2 h1 b {
   font-size: 3rem;
   line-height: 3rem;
   color: #693c31;
@@ -740,6 +741,38 @@ li {
   margin: 2rem 0 0 0;
 }
 
+.print {
+  margin: 6rem auto 3rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* min-width: 20rem; */
+  padding: 1rem 3rem;
+  font-size: 3rem;
+  background: #0475c8;
+  border-radius: 1.5rem;
+  border-color: #2f60f3;
+  cursor: pointer;
+  /* Курсор в виде указателя */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* Тень: x-смещение, y-смещение, размытие, распространение, цвет */
+  transition: 0.3s;
+  /* Плавный переход для наведения */
+  color: white;
+}
+
+.print:hover {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+
+.print img {
+  width: 4rem;
+}
+
+.print b {
+  margin-left: 1rem;
+}
 
 @media only screen and (max-width: 1300px) {
   section.main-box {
@@ -778,5 +811,114 @@ li {
   section.main-box article .cont {
     padding-left: 1rem;
   }
+}
+
+@media print {
+
+  html,
+  body {
+    color: black;
+    background: white;
+    height: fit-content;
+    position: static;
+    overflow: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  header,
+  footer,
+  nav,
+  aside {
+    display: none;
+  }
+
+  .no-print {
+    display: none;
+    height: 0;
+  }
+
+  img {
+    max-width: 100%;
+    /* Убедитесь, что изображения не выходят за пределы страницы */
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    /* Убираем цвета ссылок для печати */
+  }
+
+  .container-2 {
+    width: 100%;
+    height: 100%;
+    font-size: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: none;
+    position: static;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  section.main-box {
+    width: 100%;
+    padding: 0!important;
+    margin: 0!important;
+  }
+
+  section.main-box article {
+    padding: 0!important;
+    margin: 0!important;
+  }
+
+  .glass-effect {
+    background: white;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    /* Safari */
+    border: none;
+  }
+  .animation-from-distance {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container-2 h1 {
+    max-width: 100%;
+    padding: 0!important;
+    margin: 0!important;
+    font-size: 3.5rem;
+  }
+  .container-2 h1 b {
+    font-size: 2rem;
+  }
+
+  section.main-box {
+    width: 100%;
+    height: fit-content;
+    padding: 0!important;
+    margin: 0!important;
+  }
+
+  .container-2 h2 {
+    max-width: 100%;
+    padding: 0!important;
+    margin: 0!important;
+    font-size: 2.5rem;
+display: none;
+  }
+
+  .cont{
+    font-size: 1.8rem;
+  }
+
+  li {
+    margin: 1rem 0 0 0;
+  }
+
+
 
 }
