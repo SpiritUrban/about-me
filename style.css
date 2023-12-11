@@ -741,6 +741,24 @@ li {
   margin: 2rem 0 0 0;
 }
 
+.contacts {
+  margin-top: 3rem;
+  padding: 1rem;
+  color: #642e1d;
+  border-top: 3px solid #777;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+}
+
+.contacts a {
+  color: #2a2a54;
+}
+
+.contacts a:hover {
+  border-bottom: 4px solid #2a2a54
+}
+
 .print {
   margin: 6rem auto 3rem auto;
   display: flex;
@@ -865,13 +883,13 @@ li {
 
   section.main-box {
     width: 100%;
-    padding: 0!important;
-    margin: 0!important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   section.main-box article {
-    padding: 0!important;
-    margin: 0!important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .glass-effect {
@@ -881,6 +899,7 @@ li {
     /* Safari */
     border: none;
   }
+
   .animation-from-distance {
     padding: 0;
     margin: 0;
@@ -888,10 +907,11 @@ li {
 
   .container-2 h1 {
     max-width: 100%;
-    padding: 0!important;
-    margin: 0!important;
+    padding: 0 !important;
+    margin: 0 !important;
     font-size: 3.5rem;
   }
+
   .container-2 h1 b {
     font-size: 2rem;
   }
@@ -899,19 +919,19 @@ li {
   section.main-box {
     width: 100%;
     height: fit-content;
-    padding: 0!important;
-    margin: 0!important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .container-2 h2 {
     max-width: 100%;
-    padding: 0!important;
-    margin: 0!important;
+    padding: 0 !important;
+    margin: 0 !important;
     font-size: 2.5rem;
-display: none;
+    display: none;
   }
 
-  .cont{
+  .cont {
     font-size: 1.8rem;
   }
 
@@ -919,6 +939,15 @@ display: none;
     margin: 1rem 0 0 0;
   }
 
+  .contacts {
+    margin-top: 3rem;
+    padding: 1rem;
+    color: #642e1d;
+    border-top: 3px solid #777;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+  }
 
 
 }
