@@ -651,13 +651,15 @@ body {
   color: #2a2a54;
   max-width: 70%;
   margin: 6rem auto 1rem auto;
-  line-height: 4rem;
+  line-height: 5rem;
 }
 
 .container-2 h1 b {
   font-size: 3rem;
   line-height: 3rem;
   color: #693c31;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 
