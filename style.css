@@ -646,16 +646,17 @@ body {
 }
 
 .container-2 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   color: #2a2a54;
   max-width: 70%;
   margin: 6rem auto 1rem auto;
-  line-height: 5rem;
+  line-height: 4rem;
 }
 .container-2 h1 b{
   font-size: 3rem;
-
+  line-height: 3rem;
+  color: #693c31;
 }
 
 
@@ -744,13 +745,13 @@ li {
   section.main-box {
     width: 70%;
   }
-
-  .top-switchers {
-    /* width: 60%; */
-  }
 }
 
 @media only screen and (max-width: 900px) {
+  .container-2 h1 {
+    max-width: 100%;
+  }
+
   section.main-box {
     width: 80%;
   }
@@ -774,10 +775,6 @@ li {
     max-width: 90%;
   }
 
-  .top-switchers {
-    /* width: 90%; */
-  }
- 
   section.main-box article .cont {
     padding-left: 1rem;
   }
